@@ -144,15 +144,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let item = Item(context: context)
         item.title = "New Macbook Pro"
-        item.details = "The new macbook pro is the best new macbook in market."
+        item.userNotes = "The new macbook pro is the best new macbook in market."
         
         let item2 = Item(context: context)
         item2.title = "New Macbook Pro New Macbook Pro"
-        item2.details = "The new macbook pro is the best new macbook in market macbook pro is the best new macbook in market."
+        item2.userNotes = "The new macbook pro is the best new macbook in market macbook pro is the best new macbook in market."
         
         let item3 = Item(context: context)
         item3.title = "New Macbook Pro"
-        item3.details = "The new macbook pro is the best new macbook in market."
+        item3.userNotes = "The new macbook pro is the best new macbook in market."
         
         
     }

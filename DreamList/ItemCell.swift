@@ -25,7 +25,7 @@ class ItemCell: UITableViewCell {
         let stringDate = formatter.string(from: temp as! Date)
         
         title.text = item.title
-        details.text = item.details
+        details.text = item.userNotes
         date.text = "\(stringDate)"
         
     }
