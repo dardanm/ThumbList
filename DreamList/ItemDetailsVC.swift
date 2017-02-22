@@ -14,6 +14,7 @@ class ItemDetailsVC: UIViewController {
     
     @IBOutlet weak var userNotesEntryField: UITextView!
     
+    var itemToEdit: Item?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,18 @@ class ItemDetailsVC: UIViewController {
         
         ad.saveContext()
         
+        
+    }
+    
+    
+    func loadItemData(){
+        
+        if let item = itemToEdit {
+            userTitleEntryField.text = item.title
+            userNotesEntryField.text = item.userNotes
+            
+            
+        }
         
     }
     
