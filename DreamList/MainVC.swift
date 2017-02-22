@@ -27,8 +27,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        //generateTestData()
-        //ad.saveContext()
+        generateTestData()
+        ad.saveContext()
         attemptFetch()
     
     }
