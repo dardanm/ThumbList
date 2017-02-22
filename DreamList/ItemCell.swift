@@ -21,7 +21,7 @@ class ItemCell: UITableViewCell {
         // Converting date created value to MM/DD/YYYY
         let temp = item.created
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
+        formatter.dateFormat = "MM/dd/yyyy, h:mm a"
         let stringDate = formatter.string(from: temp as! Date)
         
         title.text = item.title

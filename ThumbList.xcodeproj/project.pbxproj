@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F85F95941E5CEE86007E1A9C /* DreamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F95941E5CEE86007E1A9C /* ThumbList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85F95971E5CEE86007E1A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F85F95991E5CEE86007E1A9C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F85F959C1E5CEE86007E1A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		F85F958B1E5CEE86007E1A9C = {
 			isa = PBXGroup;
 			children = (
-				F85F95961E5CEE86007E1A9C /* DreamList */,
+				F85F95961E5CEE86007E1A9C /* ThumbList */,
 				F85F95951E5CEE86007E1A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,12 +70,12 @@
 		F85F95951E5CEE86007E1A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F85F95941E5CEE86007E1A9C /* DreamList.app */,
+				F85F95941E5CEE86007E1A9C /* ThumbList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F85F95961E5CEE86007E1A9C /* DreamList */ = {
+		F85F95961E5CEE86007E1A9C /* ThumbList */ = {
 			isa = PBXGroup;
 			children = (
 				F85F95F71E5D4619007E1A9C /* Controller */,
@@ -88,6 +88,7 @@
 				F85F95A61E5CEE86007E1A9C /* Info.plist */,
 				F85F959E1E5CEE86007E1A9C /* DreamList.xcdatamodeld */,
 			);
+			name = ThumbList;
 			path = DreamList;
 			sourceTree = "<group>";
 		};
@@ -135,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F85F95931E5CEE86007E1A9C /* DreamList */ = {
+		F85F95931E5CEE86007E1A9C /* ThumbList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F85F95A91E5CEE86007E1A9C /* Build configuration list for PBXNativeTarget "DreamList" */;
+			buildConfigurationList = F85F95A91E5CEE86007E1A9C /* Build configuration list for PBXNativeTarget "ThumbList" */;
 			buildPhases = (
 				F85F95901E5CEE86007E1A9C /* Sources */,
 				F85F95911E5CEE86007E1A9C /* Frameworks */,
@@ -147,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = DreamList;
+			name = ThumbList;
 			productName = DreamList;
-			productReference = F85F95941E5CEE86007E1A9C /* DreamList.app */;
+			productReference = F85F95941E5CEE86007E1A9C /* ThumbList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F85F958F1E5CEE86007E1A9C /* Build configuration list for PBXProject "DreamList" */;
+			buildConfigurationList = F85F958F1E5CEE86007E1A9C /* Build configuration list for PBXProject "ThumbList" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F85F95931E5CEE86007E1A9C /* DreamList */,
+				F85F95931E5CEE86007E1A9C /* ThumbList */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +345,7 @@
 				DEVELOPMENT_TEAM = Y6SG367258;
 				INFOPLIST_FILE = DreamList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdardan.DreamList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdardan.ThumbList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -357,7 +358,7 @@
 				DEVELOPMENT_TEAM = Y6SG367258;
 				INFOPLIST_FILE = DreamList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdardan.DreamList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdardan.ThumbList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -366,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F85F958F1E5CEE86007E1A9C /* Build configuration list for PBXProject "DreamList" */ = {
+		F85F958F1E5CEE86007E1A9C /* Build configuration list for PBXProject "ThumbList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F85F95A71E5CEE86007E1A9C /* Debug */,
@@ -375,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F85F95A91E5CEE86007E1A9C /* Build configuration list for PBXNativeTarget "DreamList" */ = {
+		F85F95A91E5CEE86007E1A9C /* Build configuration list for PBXNativeTarget "ThumbList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F85F95AA1E5CEE86007E1A9C /* Debug */,

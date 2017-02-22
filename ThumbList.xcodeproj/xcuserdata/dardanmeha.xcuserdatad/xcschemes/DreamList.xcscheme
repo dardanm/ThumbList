@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F85F95931E5CEE86007E1A9C"
-               BuildableName = "DreamList.app"
-               BlueprintName = "DreamList"
-               ReferencedContainer = "container:DreamList.xcodeproj">
+               BuildableName = "ThumbList.app"
+               BlueprintName = "ThumbList"
+               ReferencedContainer = "container:ThumbList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F85F95931E5CEE86007E1A9C"
-            BuildableName = "DreamList.app"
-            BlueprintName = "DreamList"
-            ReferencedContainer = "container:DreamList.xcodeproj">
+            BuildableName = "ThumbList.app"
+            BlueprintName = "ThumbList"
+            ReferencedContainer = "container:ThumbList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F85F95931E5CEE86007E1A9C"
-            BuildableName = "DreamList.app"
-            BlueprintName = "DreamList"
-            ReferencedContainer = "container:DreamList.xcodeproj">
+            BuildableName = "ThumbList.app"
+            BlueprintName = "ThumbList"
+            ReferencedContainer = "container:ThumbList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F85F95931E5CEE86007E1A9C"
-            BuildableName = "DreamList.app"
-            BlueprintName = "DreamList"
-            ReferencedContainer = "container:DreamList.xcodeproj">
+            BuildableName = "ThumbList.app"
+            BlueprintName = "ThumbList"
+            ReferencedContainer = "container:ThumbList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
