@@ -12,15 +12,21 @@ class ItemCell: UITableViewCell {
 
     @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var price: UILabel!
     @IBOutlet weak var details: UILabel!
+    @IBOutlet weak var date: UILabel!
     
     func configureCell(item: Item){
         
-        title.text = item.title
-        price.text = "$\(item.price)"
-        details.text = item.details
+
+        // Converting date created value to MM/DD/YYYY
+        let temp = item.created
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let stringDate = formatter.string(from: temp as! Date)
         
+        title.text = item.title
+        details.text = item.details
+        date.text = "\(stringDate)"
         
     }
     

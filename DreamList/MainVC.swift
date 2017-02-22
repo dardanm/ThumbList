@@ -28,7 +28,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.dataSource = self
         
         generateTestData()
+        //ad.saveContext()
         attemptFetch()
+        
         
     
     }
@@ -40,7 +42,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
         return cell
         
-        return UITableViewCell()
+        //return UITableViewCell()
     }
     
     func configureCell(cell: ItemCell, indexPath: NSIndexPath){
@@ -144,18 +146,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let item = Item(context: context)
         item.title = "New Macbook Pro"
-        item.price = 1800
         item.details = "The new macbook pro is the best new macbook in market."
         
         let item2 = Item(context: context)
-        item2.title = "New Macbook Pro"
-        item2.price = 1800
-        item2.details = "The new macbook pro is the best new macbook in market."
+        item2.title = "New Macbook Pro New Macbook Pro"
+        item2.details = "The new macbook pro is the best new macbook in market macbook pro is the best new macbook in market."
         
         let item3 = Item(context: context)
         item3.title = "New Macbook Pro"
-        item3.price = 1800
         item3.details = "The new macbook pro is the best new macbook in market."
+        
         
     }
     
