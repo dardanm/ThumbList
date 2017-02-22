@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
-//
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+    
+    // FRC works directly with core data and table view
 
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
+    
+    var fetchedResultController = NSFetchedResultsController <Item>()
     
     
     override func viewDidLoad() {
@@ -39,6 +43,37 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 0
     }
     
+    
+    func attemptFetch(){
+        
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        fetchRequest.sortDescriptors[dateSort]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: <#T##NSManagedObjectContext#>, sectionNameKeyPath: <#T##String?#>, cacheName: <#T##String?#>)
+        
+        
+        
+        
+    }
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -91,3 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//Shortcut
+
+let ad = UIApplication.shared.delegate as! AppDelegate
+
