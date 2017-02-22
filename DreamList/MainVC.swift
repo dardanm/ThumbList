@@ -17,7 +17,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
     
-    var fetchedResultController = NSFetchedResultsController <Item>()
+    var controller = NSFetchedResultsController <Item>()
     
     
     override func viewDidLoad() {
@@ -48,14 +48,20 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
-        fetchRequest.sortDescriptors[dateSort]
+        fetchRequest.sortDescriptors = [dateSort]
         
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: <#T##NSManagedObjectContext#>, sectionNameKeyPath: <#T##String?#>, cacheName: <#T##String?#>)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
-        
-        
+        do {
+            try controller.performFetch()
+        } catch {
+            let error = error as NSError
+            print ("\(error)")
+        }
         
     }
+    
+    
     
 
 }
