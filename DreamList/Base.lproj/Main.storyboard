@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ELJ-qY-HFD">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RKt-5n-UAl">
-                                <rect key="frame" x="20" y="84" width="280" height="29"/>
+                                <rect key="frame" x="20" y="84" width="335" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="1SH-Ms-yax"/>
                                 </constraints>
@@ -36,43 +36,43 @@
                                 <color key="tintColor" red="0.36758870859999998" green="0.37145806349999999" blue="0.37145806349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="209" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UdW-1a-swP">
-                                <rect key="frame" x="16" y="132" width="288" height="436"/>
+                                <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="209" id="Mj5-2K-Vgg">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="209"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="209" id="Mj5-2K-Vgg" customClass="ItemCell" customModule="DreamList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="209"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mj5-2K-Vgg" id="M8B-Xu-XeD">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="208"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="208"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14A-hk-FtV">
-                                                    <rect key="frame" x="8" y="8" width="272" height="192"/>
+                                                    <rect key="frame" x="8" y="8" width="327" height="192"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="teslas" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-ev-ESc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="109" height="192"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="131" height="192"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="192" id="HZw-iK-Ztx"/>
                                                             </constraints>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHh-DW-mtx" userLabel="TitleView">
-                                                            <rect key="frame" x="109" y="0.0" width="163" height="192"/>
+                                                            <rect key="frame" x="131" y="0.0" width="196" height="192"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S or other name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-DJ-vpz">
-                                                                    <rect key="frame" x="16" y="16" width="131" height="41"/>
+                                                                    <rect key="frame" x="16" y="16" width="164" height="41"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                     <color key="textColor" red="0.30244553590000001" green="0.43504805070000002" blue="0.57241742230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15C-lY-8DT">
-                                                                    <rect key="frame" x="16" y="65" width="131" height="21"/>
+                                                                    <rect key="frame" x="16" y="65" width="164" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.3674645889" green="0.52857369070000004" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jye-0F-ufw">
-                                                                    <rect key="frame" x="16" y="94" width="139" height="81.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="16" y="94" width="172" height="67"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" red="0.30244553590000001" green="0.43504805070000002" blue="0.57241742230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -120,6 +120,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="Details" destination="Jye-0F-ufw" id="LHv-Qm-VGq"/>
+                                            <outlet property="Price" destination="15C-lY-8DT" id="Kgt-tn-AHc"/>
+                                            <outlet property="Title" destination="2AK-DJ-vpz" id="dcC-Ek-0sW"/>
+                                            <outlet property="thumbnail" destination="UkE-ev-ESc" id="Psq-gL-zOt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -136,6 +142,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Dream Lister" id="Qxs-GE-wAh"/>
+                    <connections>
+                        <outlet property="segment" destination="RKt-5n-UAl" id="J3a-c8-6QK"/>
+                        <outlet property="tableView" destination="UdW-1a-swP" id="Q2Q-Pl-cch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
