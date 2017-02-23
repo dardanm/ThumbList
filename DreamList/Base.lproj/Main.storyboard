@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ThumbNotes-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="ThumbList" customModuleProvider="target" sceneMemberID="viewController">
@@ -185,7 +185,7 @@
                             <constraint firstItem="UdW-1a-swP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nWb-cM-9EF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ThumbNotes" id="Qxs-GE-wAh"/>
+                    <navigationItem key="navigationItem" id="Qxs-GE-wAh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="segment" destination="RKt-5n-UAl" id="J3a-c8-6QK"/>

@@ -21,7 +21,6 @@
 		F85F95F41E5D0C6C007E1A9C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F95F31E5D0C6C007E1A9C /* MaterialView.swift */; };
 		F85F95F61E5D139B007E1A9C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F95F51E5D139B007E1A9C /* ItemCell.swift */; };
 		F85F95FB1E5D64BC007E1A9C /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F95FA1E5D64BC007E1A9C /* ItemDetailsVC.swift */; };
-		F873375E1E5E5F0500F61CC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873375D1E5E5F0500F61CC5 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		F85F95F31E5D0C6C007E1A9C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		F85F95F51E5D139B007E1A9C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		F85F95FA1E5D64BC007E1A9C /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
-		F873375D1E5E5F0500F61CC5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +141,6 @@
 			children = (
 				F85F95991E5CEE86007E1A9C /* MainVC.swift */,
 				F85F95FA1E5D64BC007E1A9C /* ItemDetailsVC.swift */,
-				F873375D1E5E5F0500F61CC5 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				F85F95ED1E5CF4D6007E1A9C /* Image+CoreDataProperties.swift in Sources */,
 				F85F95EB1E5CF4D6007E1A9C /* Item+CoreDataProperties.swift in Sources */,
 				F85F95F41E5D0C6C007E1A9C /* MaterialView.swift in Sources */,
-				F873375E1E5E5F0500F61CC5 /* ViewController.swift in Sources */,
 				F85F95EA1E5CF4D6007E1A9C /* Item+CoreDataClass.swift in Sources */,
 				F85F95EC1E5CF4D6007E1A9C /* Image+CoreDataClass.swift in Sources */,
 				F85F95FB1E5D64BC007E1A9C /* ItemDetailsVC.swift in Sources */,
