@@ -13,6 +13,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
 
     @IBOutlet weak var userTitleEntryField: UITextField!
     
+    @IBOutlet weak var camAndLibraryPopUp: UIView!
     @IBOutlet weak var userDate: UILabel!
     @IBOutlet weak var userNotesEntryField: UITextView!
     
@@ -27,6 +28,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // round corners for camera/library popup
+        camAndLibraryPopUp.layer.cornerRadius = 8.0
 
         if let topItem = self.navigationController?.navigationBar.topItem{
             
@@ -40,6 +43,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        imagePicker.cameraCaptureMode = .photo
 
         
     }
@@ -127,13 +132,15 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var thumbImgNotes: UIImageView!
     @IBAction func uploadImage(_ sender: UIButton) {
         
+        camAndLibraryPopUp.isHidden = false
         present(imagePicker, animated: true, completion: nil)
+        
         
     }
     
     // Pick image from user's photo library
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-
+        
         if let  img = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
         thumbImgNotes.image = img
