@@ -207,14 +207,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-ir-NYx">
-                                <rect key="frame" x="16" y="74" width="288" height="30"/>
+                                <rect key="frame" x="54" y="84" width="250" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="URo-Qt-R3M"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-An-RkS">
-                                <rect key="frame" x="16" y="114" width="288" height="350"/>
+                                <rect key="frame" x="16" y="122" width="288" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.266214901095639" green="0.27187904792746109" blue="0.27187904792746109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -227,14 +230,18 @@
                                     <constraint firstAttribute="height" constant="40" id="O2b-co-N6W"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="cam4"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="L16-Rs-FdZ" eventType="touchUpInside" id="4jJ-Pz-I91"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-fc-WZ8">
-                                <rect key="frame" x="16" y="479" width="36" height="30"/>
+                                <rect key="frame" x="31" y="479" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9iC-wh-kla"/>
+                                    <constraint firstAttribute="height" constant="30" id="XQz-Wf-oeN"/>
+                                    <constraint firstAttribute="width" constant="30" id="kGB-0D-9rk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Save">
+                                <state key="normal" backgroundImage="save">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.49922975349999998" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -242,10 +249,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ME-rf-hjB">
-                                <rect key="frame" x="284" y="484" width="20" height="20"/>
+                                <rect key="frame" x="259" y="479" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="H6h-gC-ukL"/>
-                                    <constraint firstAttribute="width" constant="20" id="Uij-Z9-CYc"/>
+                                    <constraint firstAttribute="width" constant="30" id="4tM-Sy-NTe"/>
+                                    <constraint firstAttribute="height" constant="30" id="QJT-Pw-1jV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="trash">
@@ -255,27 +262,37 @@
                                     <action selector="deleteInfoButton:" destination="L16-Rs-FdZ" eventType="touchUpInside" id="BJ0-zv-UTN"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teslas" translatesAutoresizingMaskIntoConstraints="NO" id="eQT-Lj-pyG">
+                                <rect key="frame" x="16" y="84" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8b9-oC-n1k"/>
+                                    <constraint firstAttribute="width" constant="30" id="ixV-PA-fCI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7GI-ir-NYx" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" id="3WV-fd-lJw"/>
                             <constraint firstItem="7Tl-NI-xhc" firstAttribute="top" secondItem="wBQ-KT-oLQ" secondAttribute="bottom" constant="10" id="549-fu-RPN"/>
-                            <constraint firstItem="WhB-An-RkS" firstAttribute="trailing" secondItem="bw0-wN-tyh" secondAttribute="trailingMargin" id="6vs-zk-bqb"/>
-                            <constraint firstItem="WhB-An-RkS" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" id="Eg8-bl-KL4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6ME-rf-hjB" secondAttribute="trailing" constant="15" id="8NR-zT-eSg"/>
+                            <constraint firstItem="WhB-An-RkS" firstAttribute="trailing" secondItem="bw0-wN-tyh" secondAttribute="trailingMargin" id="CZi-uF-4YM"/>
                             <constraint firstItem="wBQ-KT-oLQ" firstAttribute="centerX" secondItem="bw0-wN-tyh" secondAttribute="centerX" id="FXy-Yq-V3p"/>
-                            <constraint firstItem="7Tl-NI-xhc" firstAttribute="top" secondItem="6ME-rf-hjB" secondAttribute="bottom" constant="20" id="Taj-tA-3Jy"/>
-                            <constraint firstItem="6ME-rf-hjB" firstAttribute="trailing" secondItem="bw0-wN-tyh" secondAttribute="trailingMargin" id="UhS-nM-gGw"/>
-                            <constraint firstItem="Rh7-fc-WZ8" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" id="Xvs-C2-I2j"/>
-                            <constraint firstItem="7GI-ir-NYx" firstAttribute="trailing" secondItem="bw0-wN-tyh" secondAttribute="trailingMargin" id="Yl9-iD-KaZ"/>
-                            <constraint firstItem="7Tl-NI-xhc" firstAttribute="top" secondItem="Rh7-fc-WZ8" secondAttribute="bottom" constant="15" id="cIC-kU-YTb"/>
-                            <constraint firstItem="7GI-ir-NYx" firstAttribute="top" secondItem="iGG-Py-Vex" secondAttribute="bottom" constant="10" id="fDG-Ur-kdb"/>
-                            <constraint firstItem="WhB-An-RkS" firstAttribute="top" secondItem="7GI-ir-NYx" secondAttribute="bottom" constant="10" id="p3X-SI-gFN"/>
-                            <constraint firstItem="wBQ-KT-oLQ" firstAttribute="top" secondItem="WhB-An-RkS" secondAttribute="bottom" constant="10" id="uae-z3-JKw"/>
+                            <constraint firstItem="7GI-ir-NYx" firstAttribute="top" secondItem="iGG-Py-Vex" secondAttribute="bottom" constant="20" id="ImY-bw-shd"/>
+                            <constraint firstItem="7GI-ir-NYx" firstAttribute="trailing" secondItem="bw0-wN-tyh" secondAttribute="trailingMargin" id="KJ2-FZ-g79"/>
+                            <constraint firstItem="WhB-An-RkS" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" id="KJL-jH-Ixk"/>
+                            <constraint firstItem="7GI-ir-NYx" firstAttribute="leading" secondItem="eQT-Lj-pyG" secondAttribute="trailing" constant="8" id="Rja-jc-gj7"/>
+                            <constraint firstItem="wBQ-KT-oLQ" firstAttribute="top" secondItem="WhB-An-RkS" secondAttribute="bottom" constant="10" id="Xo6-BS-x7j"/>
+                            <constraint firstItem="7Tl-NI-xhc" firstAttribute="top" secondItem="6ME-rf-hjB" secondAttribute="bottom" constant="15" id="dE4-kn-0b6"/>
+                            <constraint firstItem="7Tl-NI-xhc" firstAttribute="top" secondItem="Rh7-fc-WZ8" secondAttribute="bottom" constant="15" id="dSU-fe-VeL"/>
+                            <constraint firstItem="WhB-An-RkS" firstAttribute="top" secondItem="eQT-Lj-pyG" secondAttribute="bottom" constant="8" id="iN0-78-rxY"/>
+                            <constraint firstItem="eQT-Lj-pyG" firstAttribute="top" secondItem="iGG-Py-Vex" secondAttribute="bottom" constant="20" id="mrQ-Yz-MRb"/>
+                            <constraint firstItem="eQT-Lj-pyG" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" id="ugQ-gQ-8lE"/>
+                            <constraint firstItem="Rh7-fc-WZ8" firstAttribute="leading" secondItem="bw0-wN-tyh" secondAttribute="leadingMargin" constant="15" id="yNe-FK-0w6"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="thumbImgNotes" destination="eQT-Lj-pyG" id="5qi-DH-dEm"/>
                         <outlet property="userNotesEntryField" destination="WhB-An-RkS" id="Z9m-ga-8ix"/>
                         <outlet property="userTitleEntryField" destination="7GI-ir-NYx" id="leh-ne-r88"/>
                     </connections>
@@ -311,6 +328,7 @@
     <resources>
         <image name="cam4" width="128" height="128"/>
         <image name="edit-2" width="64" height="64"/>
+        <image name="save" width="128" height="128"/>
         <image name="teslas" width="450" height="274"/>
         <image name="trash" width="128" height="128"/>
     </resources>

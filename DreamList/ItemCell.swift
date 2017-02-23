@@ -27,6 +27,7 @@ class ItemCell: UITableViewCell {
         title.text = item.title
         details.text = item.userNotes
         date.text = "\(stringDate)"
+        thumbnail.image = item.toImage?.image as? UIImage
         
     }
     

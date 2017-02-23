@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
-class ItemDetailsVC: UIViewController {
+class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var userTitleEntryField: UITextField!
     
     @IBOutlet weak var userNotesEntryField: UITextView!
     
     var itemToEdit: Item?
+    var imagePicker: UIImagePickerController!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,9 @@ class ItemDetailsVC: UIViewController {
             loadItemData()
         }
         
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        
         
     }
 
@@ -37,6 +43,11 @@ class ItemDetailsVC: UIViewController {
         
         var item: Item!
         
+        // image entity
+        let picture = Image(context: context)
+        picture.image = thumbImgNotes.image
+        
+
         if itemToEdit == nil {
             
             item = Item(context: context)
@@ -44,6 +55,8 @@ class ItemDetailsVC: UIViewController {
         } else {
             item = itemToEdit
         }
+        
+        item.toImage = picture
         
         if let title = userTitleEntryField.text {
             item.title = title
@@ -61,31 +74,10 @@ class ItemDetailsVC: UIViewController {
         if let item = itemToEdit {
             userTitleEntryField.text = item.title
             userNotesEntryField.text = item.userNotes
-            
+            thumbImgNotes.image = item.toImage?.image as? UIImage
             
         }
         
-    }
-    
-    func saveInfo(){
-        var item: Item!
-        
-        if itemToEdit == nil {
-            
-            item = Item(context: context)
-            
-        } else {
-            item = itemToEdit
-        }
-        
-        if let title = userTitleEntryField.text {
-            item.title = title
-        }
-        if let userNotes = userNotesEntryField.text {
-            item.userNotes = userNotes
-        }
-        
-        ad.saveContext()
     }
     
     // delete notes page
@@ -99,7 +91,27 @@ class ItemDetailsVC: UIViewController {
         // Go back to controller after deleting notes
         _ = navigationController?.popViewController(animated: true)
         
+    }
+    
+    // Upload image
+    
+    
+    @IBOutlet weak var thumbImgNotes: UIImageView!
+    @IBAction func uploadImage(_ sender: UIButton) {
         
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let  img = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            
+            thumbImgNotes.image = img
+            
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
         
     }
     
