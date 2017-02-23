@@ -24,12 +24,26 @@ class ItemDetailsVC: UIViewController {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
             
         }
-    
+        
+        if itemToEdit != nil {
+            loadItemData()
+        }
+        
+        
     }
+
     
     @IBAction func userSaveNotes(_ sender: Any) {
         
-        let item = Item(context: context)
+        var item: Item!
+        
+        if itemToEdit == nil {
+            
+            item = Item(context: context)
+            
+        } else {
+            item = itemToEdit
+        }
         
         if let title = userTitleEntryField.text {
             item.title = title
@@ -37,10 +51,8 @@ class ItemDetailsVC: UIViewController {
         if let userNotes = userNotesEntryField.text {
             item.userNotes = userNotes
         }
-        
+
         ad.saveContext()
-        
-        
     }
     
     
@@ -53,6 +65,27 @@ class ItemDetailsVC: UIViewController {
             
         }
         
+    }
+    
+    func saveInfo(){
+        var item: Item!
+        
+        if itemToEdit == nil {
+            
+            item = Item(context: context)
+            
+        } else {
+            item = itemToEdit
+        }
+        
+        if let title = userTitleEntryField.text {
+            item.title = title
+        }
+        if let userNotes = userNotesEntryField.text {
+            item.userNotes = userNotes
+        }
+        
+        ad.saveContext()
     }
     
 

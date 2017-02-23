@@ -93,6 +93,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
                 }
             }
         }
+
     }
     
     
@@ -177,7 +178,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
     }
     
-    
+    func saveInfo(){
+        
+    }
  
     
 
