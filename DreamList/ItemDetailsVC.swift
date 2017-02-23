@@ -88,6 +88,22 @@ class ItemDetailsVC: UIViewController {
         ad.saveContext()
     }
     
+    // delete notes page
+    @IBAction func deleteInfoButton(_ sender: Any) {
+        
+        if itemToEdit != nil {
+            context.delete(itemToEdit!)
+            ad.saveContext()
+        }
+        
+        // Go back to controller after deleting notes
+        _ = navigationController?.popViewController(animated: true)
+        
+        
+        
+    }
+    
+    
 
 
 }
