@@ -38,7 +38,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14A-hk-FtV">
                                                     <rect key="frame" x="8" y="8" width="304" height="68"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="teslas" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-ev-ESc">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-ev-ESc">
                                                             <rect key="frame" x="0.0" y="0.0" width="61" height="68"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/22/2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwr-1s-dsc" userLabel="Date">
@@ -148,6 +148,9 @@
                                     <segment title="Name"/>
                                 </segments>
                                 <color key="tintColor" red="0.36758870859999998" green="0.37145806349999999" blue="0.37145806349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ph4-yq-G2k"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KC-y9-QOg">
                                 <rect key="frame" x="278" y="474" width="26" height="29"/>
@@ -262,7 +265,7 @@
                                     <action selector="deleteInfoButton:" destination="L16-Rs-FdZ" eventType="touchUpInside" id="BJ0-zv-UTN"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teslas" translatesAutoresizingMaskIntoConstraints="NO" id="eQT-Lj-pyG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="eQT-Lj-pyG">
                                 <rect key="frame" x="16" y="84" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8b9-oC-n1k"/>
@@ -329,8 +332,8 @@
         <image name="cam4" width="128" height="128"/>
         <image name="edit-2" width="64" height="64"/>
         <image name="save" width="128" height="128"/>
-        <image name="teslas" width="450" height="274"/>
         <image name="trash" width="128" height="128"/>
+        <image name="user" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fqv-Qg-Fhe"/>

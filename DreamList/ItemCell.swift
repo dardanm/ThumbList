@@ -24,7 +24,8 @@ class ItemCell: UITableViewCell {
         formatter.dateFormat = "MM/dd/yyyy, h:mm a"
         let stringDate = formatter.string(from: temp as! Date)
         
-        title.text = item.title
+        title.text = item.title?.uppercased()
+        //title.text = title.text?.uppercased()
         details.text = item.userNotes
         date.text = "\(stringDate)"
         thumbnail.image = item.toImage?.image as? UIImage

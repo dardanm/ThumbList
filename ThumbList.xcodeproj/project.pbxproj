@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36D7CE7BF9929D841D98EBC3 /* Pods_ThumbList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5672D7A623D8694913CC98 /* Pods_ThumbList.framework */; };
 		F85F95981E5CEE86007E1A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F95971E5CEE86007E1A9C /* AppDelegate.swift */; };
 		F85F959A1E5CEE86007E1A9C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F95991E5CEE86007E1A9C /* MainVC.swift */; };
 		F85F959D1E5CEE86007E1A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F959B1E5CEE86007E1A9C /* Main.storyboard */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5672D7A623D8694913CC98 /* Pods_ThumbList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThumbList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C24D2DAC46D29E168C00E10 /* Pods-ThumbList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThumbList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThumbList/Pods-ThumbList.debug.xcconfig"; sourceTree = "<group>"; };
+		F796B5A32F943A496BC7EE73 /* Pods-ThumbList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThumbList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThumbList/Pods-ThumbList.release.xcconfig"; sourceTree = "<group>"; };
 		F85F95941E5CEE86007E1A9C /* ThumbList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85F95971E5CEE86007E1A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F85F95991E5CEE86007E1A9C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -47,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D7CE7BF9929D841D98EBC3 /* Pods_ThumbList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0A7C37C67010B66FAD2AD0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D5672D7A623D8694913CC98 /* Pods_ThumbList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B90A8B13D7A21B99C33563DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C24D2DAC46D29E168C00E10 /* Pods-ThumbList.debug.xcconfig */,
+				F796B5A32F943A496BC7EE73 /* Pods-ThumbList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F85F958B1E5CEE86007E1A9C = {
 			isa = PBXGroup;
 			children = (
 				F85F95961E5CEE86007E1A9C /* ThumbList */,
 				F85F95951E5CEE86007E1A9C /* Products */,
+				B90A8B13D7A21B99C33563DE /* Pods */,
+				A0A7C37C67010B66FAD2AD0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F85F95A91E5CEE86007E1A9C /* Build configuration list for PBXNativeTarget "ThumbList" */;
 			buildPhases = (
+				3B239E52652D2FF16F9DB450 /* [CP] Check Pods Manifest.lock */,
 				F85F95901E5CEE86007E1A9C /* Sources */,
 				F85F95911E5CEE86007E1A9C /* Frameworks */,
 				F85F95921E5CEE86007E1A9C /* Resources */,
+				89B55692E914EB7107810CE1 /* [CP] Embed Pods Frameworks */,
+				3AE0E2E50C0D1287204E5E07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AE0E2E50C0D1287204E5E07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThumbList/Pods-ThumbList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B239E52652D2FF16F9DB450 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89B55692E914EB7107810CE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThumbList/Pods-ThumbList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F85F95901E5CEE86007E1A9C /* Sources */ = {
@@ -328,6 +403,7 @@
 		};
 		F85F95AA1E5CEE86007E1A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C24D2DAC46D29E168C00E10 /* Pods-ThumbList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y6SG367258;
@@ -341,6 +417,7 @@
 		};
 		F85F95AB1E5CEE86007E1A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F796B5A32F943A496BC7EE73 /* Pods-ThumbList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y6SG367258;
