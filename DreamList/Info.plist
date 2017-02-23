@@ -24,6 +24,10 @@
 	<true/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Picking image for notes</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Used to access device contacts</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to access device camera</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

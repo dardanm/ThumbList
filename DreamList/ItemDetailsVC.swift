@@ -39,7 +39,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        
+
         
     }
 
@@ -108,19 +108,17 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
     }
     
+    // Pick image from user's photo library
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
+
         if let  img = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
-            thumbImgNotes.image = img
+        thumbImgNotes.image = img
+        self.dismiss(animated: true, completion: nil)
             
         }
-        
-        imagePicker.dismiss(animated: true, completion: nil)
-        
+    
     }
-    
-    
 
 
 }
