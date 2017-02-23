@@ -15,6 +15,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var details: UILabel!
     @IBOutlet weak var date: UILabel!
     
+    
     func configureCell(item: Item){
         
 

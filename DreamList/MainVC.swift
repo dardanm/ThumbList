@@ -177,30 +177,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
   
     }
-    
-    
-    func generateTestData(){
-        
-        let item = Item(context: context)
-        item.title = "New Macbook Pro"
-        item.userNotes = "The new macbook pro is the best new macbook in market."
-        
-        let item2 = Item(context: context)
-        item2.title = "New Macbook Pro New Macbook Pro"
-        item2.userNotes = "The new macbook pro is the best new macbook in market macbook pro is the best new macbook in market."
-        
-        let item3 = Item(context: context)
-        item3.title = "New Macbook Pro"
-        item3.userNotes = "The new macbook pro is the best new macbook in market."
-        
-        
-    }
-    
-    func saveInfo(){
-        
-    }
- 
-    
 
 }
 

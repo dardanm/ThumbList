@@ -13,6 +13,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
 
     @IBOutlet weak var userTitleEntryField: UITextField!
     
+    @IBOutlet weak var userDate: UILabel!
     @IBOutlet weak var userNotesEntryField: UITextView!
     
     var itemToEdit: Item?
@@ -69,7 +70,20 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         if let userNotes = userNotesEntryField.text {
             item.userNotes = userNotes
         }
-
+        
+        // Save Date
+        if userDate.text != nil {
+            
+        item.created = item.created
+        // Converting date created value to MM/DD/YYYY
+        let temp = item.created
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy, h:mm a"
+        let userDater = formatter.string(from: temp as! Date)
+        
+        userDate.text = userDater
+        }
+            
         ad.saveContext()
     }
     
@@ -80,6 +94,15 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             userTitleEntryField.text = item.title
             userNotesEntryField.text = item.userNotes
             thumbImgNotes.image = item.toImage?.image as? UIImage
+            
+            // Show date on each notes entry
+            // Converting date created value to MM/DD/YYYY
+            let temp = item.created
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM/dd/yyyy, h:mm a"
+            let userDater = formatter.string(from: temp as! Date)
+            
+            userDate.text = "\(userDater)"
             
         }
         
