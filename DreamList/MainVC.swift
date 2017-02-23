@@ -19,6 +19,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     var controller = NSFetchedResultsController <Item>()
     
+    // Hide status bar
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

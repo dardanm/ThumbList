@@ -18,9 +18,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
     
+    // Hide status bar
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         if let topItem = self.navigationController?.navigationBar.topItem{
             
